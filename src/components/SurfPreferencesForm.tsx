@@ -209,9 +209,9 @@ export const SurfPreferencesForm: React.FC<SurfPreferencesFormProps> = ({ onSubm
             🚗
             Transport Modes
           </label>
-          <div className="transport-options" style={{display: 'flex', flexWrap: 'wrap', gap: '0.5rem', maxWidth: '300px'}}>
+          <div className="transport-options">
             {transportOptions.map((option) => (
-              <label key={option.value} className="transport-option" style={{flex: '0 0 calc(50% - 0.25rem)', maxWidth: '140px', minHeight: '80px'}}>
+              <label key={option.value} className="transport-option">
                 <input
                   type="checkbox"
                   checked={preferences.transportModes.includes(option.value as any)}
