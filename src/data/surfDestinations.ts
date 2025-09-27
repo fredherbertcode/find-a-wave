@@ -1,6 +1,9 @@
 import { SurfDestination } from '../types';
 
 export const surfDestinations: SurfDestination[] = [
+{ SurfDestination } from '../types';
+
+export const surfDestinations: SurfDestination[] = [
   // UNITED STATES - California
   {
     id: 'us-ca-malibu',
@@ -32,15 +35,8 @@ export const surfDestinations: SurfDestination[] = [
         url: "https://www.reddit.com/r/surfing/search/?q=malibu&restrict_sr=1",
         subreddit: "r/surfing"
       },
-      {
-        text: "First Point at Malibu is magical when it's working. Long rides, perfect peeling waves. Just expect to share it with about 50 other people lol",
-        author: "u/MalibuLocal",
-        url: "https://www.reddit.com/r/surfing/search/?q=malibu+first+point&restrict_sr=1",
-        subreddit: "r/surfing"
-      }
-    ]
-  },
-  {
+
+{
     id: 'us-ca-huntington',
     name: 'Huntington Beach',
     country: 'USA',
@@ -70,15 +66,8 @@ export const surfDestinations: SurfDestination[] = [
         url: "https://www.reddit.com/r/surfing/search/?q=huntington+beach&restrict_sr=1",
         subreddit: "r/surfing"
       },
-      {
-        text: "Huntington Beach lives up to its Surf City USA reputation. The waves are solid, lifeguards everywhere, and tons of surf shops. Perfect for intermediate surfers.",
-        author: "u/SurfCityReviewer",
-        url: "https://www.reddit.com/r/surfing/search/?q=surf+city+usa&restrict_sr=1",
-        subreddit: "r/surfing"
-      }
-    ]
-  },
-  {
+
+{
     id: 'us-ca-steamer-lane',
     name: 'Steamer Lane',
     country: 'USA',
@@ -99,7 +88,8 @@ export const surfDestinations: SurfDestination[] = [
     weatherConditions: 'Cool, foggy mornings',
     surflineSpotId: '5842041f4e65fad6a77088ba'
   },
-  {
+
+{
     id: 'us-ca-ocean-beach',
     name: 'Ocean Beach',
     country: 'USA',
@@ -120,7 +110,8 @@ export const surfDestinations: SurfDestination[] = [
     weatherConditions: 'Cold, windy, foggy',
     surflineSpotId: '5842041f4e65fad6a77088ac'
   },
-  {
+
+{
     id: 'us-ca-trestles',
     name: 'Trestles',
     country: 'USA',
@@ -142,8 +133,7 @@ export const surfDestinations: SurfDestination[] = [
     surflineSpotId: '5842041f4e65fad6a770883b'
   },
 
-  // UNITED STATES - Hawaii
-  {
+{
     id: 'us-hi-pipeline',
     name: 'Pipeline',
     country: 'USA',
@@ -170,15 +160,8 @@ export const surfDestinations: SurfDestination[] = [
         url: "https://www.reddit.com/r/surfing/search/?q=pipeline+hawaii&restrict_sr=1",
         subreddit: "r/surfing"
       },
-      {
-        text: "Been surfing Pipe for 10 years and it still scares me every time. The most perfect wave in the world but also the most dangerous. Respect the reef!",
-        author: "u/PipelineLegend",
-        url: "https://www.reddit.com/r/hawaii/search/?q=pipeline+surfing&restrict_sr=1",
-        subreddit: "r/hawaii"
-      }
-    ]
-  },
-  {
+
+{
     id: 'us-hi-waikiki',
     name: 'Waikiki',
     country: 'USA',
@@ -199,7 +182,8 @@ export const surfDestinations: SurfDestination[] = [
     weatherConditions: 'Tropical paradise, sunny',
     surflineSpotId: '5842041f4e65fad6a7708878'
   },
-  {
+
+{
     id: 'us-hi-sunset',
     name: 'Sunset Beach',
     country: 'USA',
@@ -220,7 +204,8 @@ export const surfDestinations: SurfDestination[] = [
     weatherConditions: 'Tropical, trade winds',
     surflineSpotId: '5842041f4e65fad6a7708877'
   },
-  {
+
+{
     id: 'us-hi-haleiwa',
     name: 'Haleiwa',
     country: 'USA',
@@ -242,8 +227,7 @@ export const surfDestinations: SurfDestination[] = [
     surflineSpotId: '5842041f4e65fad6a7708874'
   },
 
-  // PORTUGAL
-  {
+{
     id: 'pt-ericeira',
     name: 'Ericeira',
     country: 'Portugal',
@@ -264,7 +248,8 @@ export const surfDestinations: SurfDestination[] = [
     weatherConditions: 'Mild, occasional rain',
     surflineSpotId: '584204204e65fad6a7709e87'
   },
-  {
+
+{
     id: 'pt-nazare',
     name: 'Nazaré',
     country: 'Portugal',
@@ -285,7 +270,8 @@ export const surfDestinations: SurfDestination[] = [
     weatherConditions: 'Atlantic storms, cold',
     surflineSpotId: '584204204e65fad6a7709e89'
   },
-  {
+
+{
     id: 'pt-peniche',
     name: 'Peniche',
     country: 'Portugal',
@@ -306,7 +292,8 @@ export const surfDestinations: SurfDestination[] = [
     weatherConditions: 'Atlantic climate, windy',
     surflineSpotId: '584204204e65fad6a7709e88'
   },
-  {
+
+{
     id: 'pt-sagres',
     name: 'Sagres',
     country: 'Portugal',
@@ -328,8 +315,7 @@ export const surfDestinations: SurfDestination[] = [
     surflineSpotId: '584204204e65fad6a7709e8a'
   },
 
-  // UNITED KINGDOM
-  {
+{
     id: 'uk-newquay',
     name: 'Newquay',
     country: 'United Kingdom',
@@ -350,7 +336,8 @@ export const surfDestinations: SurfDestination[] = [
     weatherConditions: 'Atlantic climate, changeable',
     surflineSpotId: '584204204e65fad6a7709d97'
   },
-  {
+
+{
     id: 'uk-croyde',
     name: 'Croyde',
     country: 'United Kingdom',
@@ -371,7 +358,8 @@ export const surfDestinations: SurfDestination[] = [
     weatherConditions: 'Atlantic climate, mild',
     surflineSpotId: '584204204e65fad6a7709d98'
   },
-  {
+
+{
     id: 'uk-woolacombe',
     name: 'Woolacombe',
     country: 'United Kingdom',
@@ -392,7 +380,8 @@ export const surfDestinations: SurfDestination[] = [
     weatherConditions: 'Mild Atlantic climate',
     surflineSpotId: '584204204e65fad6a7709d99'
   },
-  {
+
+{
     id: 'uk-thurso-east',
     name: 'Thurso East',
     country: 'United Kingdom',
@@ -413,7 +402,8 @@ export const surfDestinations: SurfDestination[] = [
     weatherConditions: 'Cold, stormy Atlantic',
     surflineSpotId: '584204204e65fad6a7709da0'
   },
-  {
+
+{
     id: 'uk-porthleven',
     name: 'Porthleven',
     country: 'United Kingdom',
@@ -434,7 +424,8 @@ export const surfDestinations: SurfDestination[] = [
     weatherConditions: 'Atlantic storms, powerful swells',
     surflineSpotId: '584204204e65fad6a7709da1'
   },
-  {
+
+{
     id: 'uk-freshwater-west',
     name: 'Freshwater West',
     country: 'United Kingdom',
@@ -455,7 +446,8 @@ export const surfDestinations: SurfDestination[] = [
     weatherConditions: 'Atlantic climate, windy',
     surflineSpotId: '584204204e65fad6a7709da2'
   },
-  {
+
+{
     id: 'uk-llangennith',
     name: 'Llangennith',
     country: 'United Kingdom',
@@ -476,7 +468,8 @@ export const surfDestinations: SurfDestination[] = [
     weatherConditions: 'Atlantic climate, mild',
     surflineSpotId: '584204204e65fad6a7709da3'
   },
-  {
+
+{
     id: 'uk-bundoran',
     name: 'Bundoran',
     country: 'Ireland',
@@ -497,7 +490,8 @@ export const surfDestinations: SurfDestination[] = [
     weatherConditions: 'Atlantic storms, powerful',
     surflineSpotId: '584204204e65fad6a7709da4'
   },
-  {
+
+{
     id: 'uk-lahinch',
     name: 'Lahinch',
     country: 'Ireland',
@@ -519,8 +513,7 @@ export const surfDestinations: SurfDestination[] = [
     surflineSpotId: '584204204e65fad6a7709da5'
   },
 
-  // FRANCE
-  {
+{
     id: 'fr-hossegor',
     name: 'Hossegor',
     country: 'France',
@@ -541,7 +534,8 @@ export const surfDestinations: SurfDestination[] = [
     weatherConditions: 'Atlantic climate, can be stormy',
     surflineSpotId: '584204204e65fad6a7709d95'
   },
-  {
+
+{
     id: 'fr-lacanau',
     name: 'Lacanau',
     country: 'France',
@@ -562,7 +556,8 @@ export const surfDestinations: SurfDestination[] = [
     weatherConditions: 'Atlantic climate, mild',
     surflineSpotId: '584204204e65fad6a7709d96'
   },
-  {
+
+{
     id: 'fr-biarritz',
     name: 'Biarritz',
     country: 'France',
@@ -589,17 +584,8 @@ export const surfDestinations: SurfDestination[] = [
         url: "https://www.reddit.com/r/surfing/search/?q=biarritz+france&restrict_sr=1",
         subreddit: "r/surfing"
       },
-      {
-        text: "Did a surf trip through France and Biarritz was the highlight. The culture, the waves, the food... everything was perfect. Expensive but totally worth it for a special trip.",
-        author: "u/FrenchWaves",
-        url: "https://www.reddit.com/r/travel/search/?q=biarritz+surfing&restrict_sr=1",
-        subreddit: "r/travel"
-      }
-    ]
-  },
 
-  // SPAIN
-  {
+{
     id: 'es-mundaka',
     name: 'Mundaka',
     country: 'Spain',
@@ -620,7 +606,8 @@ export const surfDestinations: SurfDestination[] = [
     weatherConditions: 'Atlantic climate, cool',
     surflineSpotId: '584204204e65fad6a7709d92'
   },
-  {
+
+{
     id: 'es-sopelana',
     name: 'Sopelana',
     country: 'Spain',
@@ -641,7 +628,8 @@ export const surfDestinations: SurfDestination[] = [
     weatherConditions: 'Atlantic climate, cool',
     surflineSpotId: '584204204e65fad6a7709d93'
   },
-  {
+
+{
     id: 'es-tarifa',
     name: 'Tarifa',
     country: 'Spain',
@@ -663,8 +651,7 @@ export const surfDestinations: SurfDestination[] = [
     surflineSpotId: '584204204e65fad6a7709d91'
   },
 
-  // MOROCCO
-  {
+{
     id: 'ma-taghazout',
     name: 'Taghazout',
     country: 'Morocco',
@@ -685,7 +672,8 @@ export const surfDestinations: SurfDestination[] = [
     weatherConditions: 'Atlantic climate, warm',
     surflineSpotId: '584204204e65fad6a770a123'
   },
-  {
+
+{
     id: 'ma-anchor-point',
     name: 'Anchor Point',
     country: 'Morocco',
@@ -707,8 +695,7 @@ export const surfDestinations: SurfDestination[] = [
     surflineSpotId: '584204204e65fad6a770a124'
   },
 
-  // INDONESIA - Bali
-  {
+{
     id: 'id-uluwatu',
     name: 'Uluwatu',
     country: 'Indonesia',
@@ -735,15 +722,8 @@ export const surfDestinations: SurfDestination[] = [
         url: "https://www.reddit.com/r/surfing/search/?q=uluwatu+bali&restrict_sr=1",
         subreddit: "r/surfing"
       },
-      {
-        text: "Spent 3 weeks in Bali and Ulu was by far the best wave. Scary reef but the rides are unreal. Make sure you know what you're doing before paddling out!",
-        author: "u/IndonesiaTrip",
-        url: "https://www.reddit.com/r/bali/search/?q=uluwatu+surfing&restrict_sr=1",
-        subreddit: "r/bali"
-      }
-    ]
-  },
-  {
+
+{
     id: 'id-padang-padang',
     name: 'Padang Padang',
     country: 'Indonesia',
@@ -764,7 +744,8 @@ export const surfDestinations: SurfDestination[] = [
     weatherConditions: 'Tropical, dry season ideal',
     surflineSpotId: '584204214e65fad6a770b235'
   },
-  {
+
+{
     id: 'id-canggu',
     name: 'Canggu',
     country: 'Indonesia',
@@ -785,7 +766,8 @@ export const surfDestinations: SurfDestination[] = [
     weatherConditions: 'Tropical, year-round surfing',
     surflineSpotId: '584204214e65fad6a770b236'
   },
-  {
+
+{
     id: 'id-bingin',
     name: 'Bingin',
     country: 'Indonesia',
@@ -807,8 +789,7 @@ export const surfDestinations: SurfDestination[] = [
     surflineSpotId: '584204214e65fad6a770b237'
   },
 
-  // INDONESIA - Java
-  {
+{
     id: 'id-grajagan',
     name: 'G-Land (Grajagan)',
     country: 'Indonesia',
@@ -830,8 +811,7 @@ export const surfDestinations: SurfDestination[] = [
     surflineSpotId: '584204214e65fad6a770b238'
   },
 
-  // INDONESIA - Mentawai Islands
-  {
+{
     id: 'id-ht',
     name: 'HT\'s (Hollow Trees)',
     country: 'Indonesia',
@@ -852,7 +832,8 @@ export const surfDestinations: SurfDestination[] = [
     weatherConditions: 'Tropical, equatorial climate',
     surflineSpotId: '584204214e65fad6a770b239'
   },
-  {
+
+{
     id: 'id-lances',
     name: 'Lance\'s Left',
     country: 'Indonesia',
@@ -874,8 +855,7 @@ export const surfDestinations: SurfDestination[] = [
     surflineSpotId: '584204214e65fad6a770b240'
   },
 
-  // AUSTRALIA - Gold Coast
-  {
+{
     id: 'au-superbank',
     name: 'Superbank',
     country: 'Australia',
@@ -902,15 +882,8 @@ export const surfDestinations: SurfDestination[] = [
         url: "https://www.reddit.com/r/surfing/search/?q=superbank+gold+coast&restrict_sr=1",
         subreddit: "r/surfing"
       },
-      {
-        text: "Just did a month on the Gold Coast. Superbank delivered almost every day. Competitive lineup but if you can handle the crowd, it's world class surfing.",
-        author: "u/AussieBarrels",
-        url: "https://www.reddit.com/r/australia/search/?q=gold+coast+surfing&restrict_sr=1",
-        subreddit: "r/australia"
-      }
-    ]
-  },
-  {
+
+{
     id: 'au-burleigh',
     name: 'Burleigh Heads',
     country: 'Australia',
@@ -932,8 +905,7 @@ export const surfDestinations: SurfDestination[] = [
     surflineSpotId: '584204214e65fad6a770c146'
   },
 
-  // AUSTRALIA - New South Wales
-  {
+{
     id: 'au-byron-bay',
     name: 'Byron Bay',
     country: 'Australia',
@@ -954,7 +926,8 @@ export const surfDestinations: SurfDestination[] = [
     weatherConditions: 'Subtropical, warm',
     surflineSpotId: '584204214e65fad6a770c147'
   },
-  {
+
+{
     id: 'au-manly',
     name: 'Manly',
     country: 'Australia',
@@ -975,7 +948,8 @@ export const surfDestinations: SurfDestination[] = [
     weatherConditions: 'Temperate, warm summers',
     surflineSpotId: '584204214e65fad6a770c148'
   },
-  {
+
+{
     id: 'au-bells',
     name: 'Bells Beach',
     country: 'Australia',
@@ -997,8 +971,7 @@ export const surfDestinations: SurfDestination[] = [
     surflineSpotId: '584204214e65fad6a770c149'
   },
 
-  // NEW ZEALAND
-  {
+{
     id: 'nz-raglan',
     name: 'Raglan',
     country: 'New Zealand',
@@ -1019,7 +992,8 @@ export const surfDestinations: SurfDestination[] = [
     weatherConditions: 'Temperate, changeable',
     surflineSpotId: '584204214e65fad6a770c250'
   },
-  {
+
+{
     id: 'nz-tavarua',
     name: 'Tavarua Island',
     country: 'Fiji',
@@ -1041,8 +1015,7 @@ export const surfDestinations: SurfDestination[] = [
     surflineSpotId: '584204214e65fad6a770c251'
   },
 
-  // COSTA RICA
-  {
+{
     id: 'cr-nosara',
     name: 'Nosara',
     country: 'Costa Rica',
@@ -1063,7 +1036,8 @@ export const surfDestinations: SurfDestination[] = [
     weatherConditions: 'Tropical, warm year-round',
     surflineSpotId: '584204214e65fad6a770d152'
   },
-  {
+
+{
     id: 'cr-tamarindo',
     name: 'Tamarindo',
     country: 'Costa Rica',
@@ -1084,7 +1058,8 @@ export const surfDestinations: SurfDestination[] = [
     weatherConditions: 'Tropical, dry season best',
     surflineSpotId: '584204214e65fad6a770d153'
   },
-  {
+
+{
     id: 'cr-jaco',
     name: 'Jaco',
     country: 'Costa Rica',
@@ -1105,7 +1080,8 @@ export const surfDestinations: SurfDestination[] = [
     weatherConditions: 'Tropical, rainy season can be good',
     surflineSpotId: '584204214e65fad6a770d154'
   },
-  {
+
+{
     id: 'cr-pavones',
     name: 'Pavones',
     country: 'Costa Rica',
@@ -1127,8 +1103,7 @@ export const surfDestinations: SurfDestination[] = [
     surflineSpotId: '584204214e65fad6a770d155'
   },
 
-  // NICARAGUA
-  {
+{
     id: 'ni-popoyo',
     name: 'Popoyo',
     country: 'Nicaragua',
@@ -1149,7 +1124,8 @@ export const surfDestinations: SurfDestination[] = [
     weatherConditions: 'Tropical, offshore winds',
     surflineSpotId: '584204214e65fad6a770d156'
   },
-  {
+
+{
     id: 'ni-maderas',
     name: 'Playa Maderas',
     country: 'Nicaragua',
@@ -1171,8 +1147,7 @@ export const surfDestinations: SurfDestination[] = [
     surflineSpotId: '584204214e65fad6a770d157'
   },
 
-  // MEXICO - Pacific Coast
-  {
+{
     id: 'mx-puerto-escondido',
     name: 'Puerto Escondido',
     country: 'Mexico',
@@ -1193,7 +1168,8 @@ export const surfDestinations: SurfDestination[] = [
     weatherConditions: 'Tropical, hot and humid',
     surflineSpotId: '584204214e65fad6a770d158'
   },
-  {
+
+{
     id: 'mx-sayulita',
     name: 'Sayulita',
     country: 'Mexico',
@@ -1214,7 +1190,8 @@ export const surfDestinations: SurfDestination[] = [
     weatherConditions: 'Tropical, warm year-round',
     surflineSpotId: '584204214e65fad6a770d159'
   },
-  {
+
+{
     id: 'mx-la-bocana',
     name: 'La Bocana',
     country: 'Mexico',
@@ -1236,8 +1213,7 @@ export const surfDestinations: SurfDestination[] = [
     surflineSpotId: '584204214e65fad6a770d160'
   },
 
-  // MEXICO - Baja California
-  {
+{
     id: 'mx-la-bocana-todos',
     name: 'La Bocana (Todos Santos)',
     country: 'Mexico',
@@ -1258,7 +1234,8 @@ export const surfDestinations: SurfDestination[] = [
     weatherConditions: 'Desert climate, warm',
     surflineSpotId: '584204214e65fad6a770d161'
   },
-  {
+
+{
     id: 'mx-k38',
     name: 'K38',
     country: 'Mexico',
@@ -1280,8 +1257,7 @@ export const surfDestinations: SurfDestination[] = [
     surflineSpotId: '584204214e65fad6a770d162'
   },
 
-  // CHILE
-  {
+{
     id: 'cl-pichilemu',
     name: 'Pichilemu',
     country: 'Chile',
@@ -1302,7 +1278,8 @@ export const surfDestinations: SurfDestination[] = [
     weatherConditions: 'Cool, windy',
     surflineSpotId: '584204214e65fad6a770d163'
   },
-  {
+
+{
     id: 'cl-arica',
     name: 'Arica',
     country: 'Chile',
@@ -1324,8 +1301,7 @@ export const surfDestinations: SurfDestination[] = [
     surflineSpotId: '584204214e65fad6a770d164'
   },
 
-  // PERU
-  {
+{
     id: 'pe-chicama',
     name: 'Chicama',
     country: 'Peru',
@@ -1346,7 +1322,8 @@ export const surfDestinations: SurfDestination[] = [
     weatherConditions: 'Desert coast, cool water',
     surflineSpotId: '584204214e65fad6a770d165'
   },
-  {
+
+{
     id: 'pe-mancora',
     name: 'Máncora',
     country: 'Peru',
@@ -1368,8 +1345,7 @@ export const surfDestinations: SurfDestination[] = [
     surflineSpotId: '584204214e65fad6a770d166'
   },
 
-  // BRAZIL
-  {
+{
     id: 'br-florianopolis',
     name: 'Florianópolis',
     country: 'Brazil',
@@ -1390,7 +1366,8 @@ export const surfDestinations: SurfDestination[] = [
     weatherConditions: 'Subtropical, mild',
     surflineSpotId: '584204214e65fad6a770d167'
   },
-  {
+
+{
     id: 'br-itacare',
     name: 'Itacaré',
     country: 'Brazil',
@@ -1411,7 +1388,8 @@ export const surfDestinations: SurfDestination[] = [
     weatherConditions: 'Tropical, warm and humid',
     surflineSpotId: '584204214e65fad6a770d168'
   },
-  {
+
+{
     id: 'br-fernando-noronha',
     name: 'Fernando de Noronha',
     country: 'Brazil',
@@ -1433,8 +1411,7 @@ export const surfDestinations: SurfDestination[] = [
     surflineSpotId: '584204214e65fad6a770d169'
   },
 
-  // SOUTH AFRICA
-  {
+{
     id: 'za-jeffreys-bay',
     name: 'Jeffreys Bay',
     country: 'South Africa',
@@ -1455,7 +1432,8 @@ export const surfDestinations: SurfDestination[] = [
     weatherConditions: 'Temperate, windy',
     surflineSpotId: '584204214e65fad6a770d170'
   },
-  {
+
+{
     id: 'za-muizenberg',
     name: 'Muizenberg',
     country: 'South Africa',
@@ -1476,7 +1454,8 @@ export const surfDestinations: SurfDestination[] = [
     weatherConditions: 'Mediterranean climate, windy',
     surflineSpotId: '584204214e65fad6a770d171'
   },
-  {
+
+{
     id: 'za-dungeons',
     name: 'Dungeons',
     country: 'South Africa',
@@ -1498,8 +1477,7 @@ export const surfDestinations: SurfDestination[] = [
     surflineSpotId: '584204214e65fad6a770d172'
   },
 
-  // JAPAN
-  {
+{
     id: 'jp-shonan',
     name: 'Shonan',
     country: 'Japan',
@@ -1520,7 +1498,8 @@ export const surfDestinations: SurfDestination[] = [
     weatherConditions: 'Temperate, humid summers',
     surflineSpotId: '584204214e65fad6a770d173'
   },
-  {
+
+{
     id: 'jp-miyazaki',
     name: 'Miyazaki',
     country: 'Japan',
@@ -1542,8 +1521,7 @@ export const surfDestinations: SurfDestination[] = [
     surflineSpotId: '584204214e65fad6a770d174'
   },
 
-  // PHILIPPINES
-  {
+{
     id: 'ph-siargao',
     name: 'Cloud 9, Siargao',
     country: 'Philippines',
@@ -1564,7 +1542,8 @@ export const surfDestinations: SurfDestination[] = [
     weatherConditions: 'Tropical, typhoon season',
     surflineSpotId: '584204214e65fad6a770d175'
   },
-  {
+
+{
     id: 'ph-baler',
     name: 'Baler',
     country: 'Philippines',
@@ -1586,8 +1565,7 @@ export const surfDestinations: SurfDestination[] = [
     surflineSpotId: '584204214e65fad6a770d176'
   },
 
-  // SRI LANKA
-  {
+{
     id: 'lk-arugam-bay',
     name: 'Arugam Bay',
     country: 'Sri Lanka',
@@ -1608,7 +1586,8 @@ export const surfDestinations: SurfDestination[] = [
     weatherConditions: 'Tropical, monsoon climate',
     surflineSpotId: '584204214e65fad6a770d177'
   },
-  {
+
+{
     id: 'lk-hikkaduwa',
     name: 'Hikkaduwa',
     country: 'Sri Lanka',
@@ -1630,8 +1609,7 @@ export const surfDestinations: SurfDestination[] = [
     surflineSpotId: '584204214e65fad6a770d178'
   },
 
-  // MALDIVES
-  {
+{
     id: 'mv-cokes',
     name: 'Cokes (Thulusdhoo)',
     country: 'Maldives',
@@ -1652,7 +1630,8 @@ export const surfDestinations: SurfDestination[] = [
     weatherConditions: 'Tropical, monsoon seasons',
     surflineSpotId: '584204214e65fad6a770d179'
   },
-  {
+
+{
     id: 'mv-sultans',
     name: 'Sultans',
     country: 'Maldives',
@@ -1674,29 +1653,7 @@ export const surfDestinations: SurfDestination[] = [
     surflineSpotId: '584204214e65fad6a770d180'
   },
 
-  // AUSTRALIA - Additional Locations
-  {
-    id: 'au-qld-superbank',
-    name: 'Superbank',
-    country: 'Australia',
-    region: 'Queensland',
-    coordinates: { lat: -28.1697, lng: 153.5373 },
-    waveQuality: 9,
-    waveSize: 'large',
-    difficultyLevel: 3,
-    bestMonths: [3, 4, 5, 6, 7, 8],
-    averageTemp: 24,
-    waterTemp: 21,
-    crowdLevel: 8,
-    cost: 85,
-    accommodationOptions: ['Hotel', 'Airbnb', 'Hostel'],
-    imageUrl: 'https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=500&h=300&fit=crop',
-    description: 'Artificially enhanced sandbar creating perfect barrels.',
-    highlights: ['Perfect barrels', 'Consistent waves', 'Competition venue'],
-    weatherConditions: 'Subtropical, warm year-round',
-    surflineSpotId: '584204214e65fad6a770d181'
-  },
-  {
+{
     id: 'au-wa-margarets',
     name: 'Margaret River',
     country: 'Australia',
@@ -1717,72 +1674,8 @@ export const surfDestinations: SurfDestination[] = [
     weatherConditions: 'Mediterranean climate',
     surflineSpotId: '584204214e65fad6a770d182'
   },
-  {
-    id: 'au-vic-bellsbeach',
-    name: 'Bells Beach',
-    country: 'Australia',
-    region: 'Victoria',
-    coordinates: { lat: -38.3721, lng: 144.2829 },
-    waveQuality: 8,
-    waveSize: 'large',
-    difficultyLevel: 3,
-    bestMonths: [3, 4, 5, 6, 7, 8, 9],
-    averageTemp: 16,
-    waterTemp: 14,
-    crowdLevel: 7,
-    cost: 70,
-    accommodationOptions: ['Hotel', 'Airbnb', 'Camping'],
-    imageUrl: 'https://images.unsplash.com/photo-1505142468610-359e7d316be0?w=500&h=300&fit=crop',
-    description: 'Iconic right-hand point break, home of Rip Curl Pro.',
-    highlights: ['Iconic surf spot', 'Competition venue', 'Powerful waves'],
-    weatherConditions: 'Temperate oceanic climate',
-    surflineSpotId: '584204214e65fad6a770d183'
-  },
 
-  // INDONESIA - Additional Locations
-  {
-    id: 'id-bali-padangpadang',
-    name: 'Padang Padang',
-    country: 'Indonesia',
-    region: 'Bali',
-    coordinates: { lat: -8.8238, lng: 115.1038 },
-    waveQuality: 9,
-    waveSize: 'medium',
-    difficultyLevel: 3,
-    bestMonths: [4, 5, 6, 7, 8, 9],
-    averageTemp: 30,
-    waterTemp: 27,
-    crowdLevel: 9,
-    cost: 25,
-    accommodationOptions: ['Hotel', 'Guesthouse', 'Villa'],
-    imageUrl: 'https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=500&h=300&fit=crop',
-    description: 'Perfect left-hand barrel through coral reef.',
-    highlights: ['Perfect barrels', 'Tropical paradise', 'Movie location'],
-    weatherConditions: 'Tropical, dry season',
-    surflineSpotId: '584204214e65fad6a770d184'
-  },
-  {
-    id: 'id-bali-bingin',
-    name: 'Bingin',
-    country: 'Indonesia',
-    region: 'Bali',
-    coordinates: { lat: -8.8285, lng: 115.1015 },
-    waveQuality: 8,
-    waveSize: 'medium',
-    difficultyLevel: 3,
-    bestMonths: [4, 5, 6, 7, 8, 9],
-    averageTemp: 30,
-    waterTemp: 27,
-    crowdLevel: 8,
-    cost: 20,
-    accommodationOptions: ['Guesthouse', 'Villa', 'Bungalow'],
-    imageUrl: 'https://images.unsplash.com/photo-1544551763-46a013bb70d5?w=500&h=300&fit=crop',
-    description: 'Shallow reef break with perfect right-hand barrels.',
-    highlights: ['Barrel waves', 'Cliff-top views', 'Affordable'],
-    weatherConditions: 'Tropical, consistent offshore winds',
-    surflineSpotId: '584204214e65fad6a770d185'
-  },
-  {
+{
     id: 'id-mentawai-ht',
     name: 'HTs (Mentawai)',
     country: 'Indonesia',
@@ -1804,29 +1697,7 @@ export const surfDestinations: SurfDestination[] = [
     surflineSpotId: '584204214e65fad6a770d186'
   },
 
-  // HAWAII - Additional Locations
-  {
-    id: 'us-hi-sunset',
-    name: 'Sunset Beach',
-    country: 'USA',
-    region: 'Hawaii',
-    coordinates: { lat: 21.6764, lng: -158.0545 },
-    waveQuality: 9,
-    waveSize: 'large',
-    difficultyLevel: 4,
-    bestMonths: [10, 11, 12, 1, 2, 3],
-    averageTemp: 26,
-    waterTemp: 24,
-    crowdLevel: 8,
-    cost: 200,
-    accommodationOptions: ['Hotel', 'Airbnb', 'Resort'],
-    imageUrl: 'https://images.unsplash.com/photo-1502680390469-be75c86b636f?w=500&h=300&fit=crop',
-    description: 'Powerful beach break on the North Shore.',
-    highlights: ['Big wave surfing', 'Triple Crown venue', 'Professional contests'],
-    weatherConditions: 'Tropical trade winds',
-    surflineSpotId: '584204214e65fad6a770d187'
-  },
-  {
+{
     id: 'us-hi-rockies',
     name: 'Rocky Point',
     country: 'USA',
@@ -1848,29 +1719,7 @@ export const surfDestinations: SurfDestination[] = [
     surflineSpotId: '584204214e65fad6a770d188'
   },
 
-  // COSTA RICA
-  {
-    id: 'cr-gua-tamarindo',
-    name: 'Tamarindo',
-    country: 'Costa Rica',
-    region: 'Guanacaste',
-    coordinates: { lat: 10.2997, lng: -85.8407 },
-    waveQuality: 6,
-    waveSize: 'medium',
-    difficultyLevel: 2,
-    bestMonths: [4, 5, 6, 7, 8, 9, 10, 11],
-    averageTemp: 28,
-    waterTemp: 26,
-    crowdLevel: 8,
-    cost: 60,
-    accommodationOptions: ['Hotel', 'Hostel', 'Airbnb'],
-    imageUrl: 'https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=500&h=300&fit=crop',
-    description: 'Popular beach break perfect for beginners and intermediates.',
-    highlights: ['Beginner friendly', 'Vibrant nightlife', 'Surf schools'],
-    weatherConditions: 'Tropical dry season',
-    surflineSpotId: '584204214e65fad6a770d189'
-  },
-  {
+{
     id: 'cr-gua-witch-rock',
     name: "Witch's Rock",
     country: 'Costa Rica',
@@ -1892,52 +1741,7 @@ export const surfDestinations: SurfDestination[] = [
     surflineSpotId: '584204214e65fad6a770d190'
   },
 
-  // MEXICO
-  {
-    id: 'mx-bc-k38',
-    name: 'K38',
-    country: 'Mexico',
-    region: 'Baja California',
-    coordinates: { lat: 32.0833, lng: -116.9167 },
-    waveQuality: 7,
-    waveSize: 'medium',
-    difficultyLevel: 2,
-    bestMonths: [10, 11, 12, 1, 2, 3, 4],
-    averageTemp: 18,
-    waterTemp: 16,
-    crowdLevel: 6,
-    cost: 35,
-    accommodationOptions: ['Camping', 'Hotel', 'Airbnb'],
-    imageUrl: 'https://images.unsplash.com/photo-1544551763-46a013bb70d5?w=500&h=300&fit=crop',
-    description: 'Consistent right-hand point break south of Tijuana.',
-    highlights: ['Consistent waves', 'Affordable', 'Right-hand point'],
-    weatherConditions: 'Mediterranean climate',
-    surflineSpotId: '584204214e65fad6a770d191'
-  },
-  {
-    id: 'mx-oax-puerto',
-    name: 'Puerto Escondido',
-    country: 'Mexico',
-    region: 'Oaxaca',
-    coordinates: { lat: 15.8651, lng: -97.0676 },
-    waveQuality: 10,
-    waveSize: 'large',
-    difficultyLevel: 4,
-    bestMonths: [3, 4, 5, 6, 7, 8, 9],
-    averageTemp: 30,
-    waterTemp: 26,
-    crowdLevel: 7,
-    cost: 40,
-    accommodationOptions: ['Hotel', 'Hostel', 'Airbnb'],
-    imageUrl: 'https://images.unsplash.com/photo-1502680390469-be75c86b636f?w=500&h=300&fit=crop',
-    description: 'Legendary beach break with massive barrels.',
-    highlights: ['Massive barrels', 'World championship venue', 'Mexican culture'],
-    weatherConditions: 'Tropical, hot and humid',
-    surflineSpotId: '584204214e65fad6a770d192'
-  },
-
-  // BRAZIL
-  {
+{
     id: 'br-sp-ubatuba',
     name: 'Ubatuba',
     country: 'Brazil',
@@ -1958,7 +1762,8 @@ export const surfDestinations: SurfDestination[] = [
     weatherConditions: 'Subtropical, mild temperatures',
     surflineSpotId: '584204214e65fad6a770d193'
   },
-  {
+
+{
     id: 'br-rj-barra',
     name: 'Barra da Tijuca',
     country: 'Brazil',
@@ -1980,52 +1785,7 @@ export const surfDestinations: SurfDestination[] = [
     surflineSpotId: '584204214e65fad6a770d194'
   },
 
-  // SOUTH AFRICA
-  {
-    id: 'za-wc-jeffreys',
-    name: 'Jeffreys Bay',
-    country: 'South Africa',
-    region: 'Eastern Cape',
-    coordinates: { lat: -34.0486, lng: 24.9092 },
-    waveQuality: 9,
-    waveSize: 'large',
-    difficultyLevel: 3,
-    bestMonths: [4, 5, 6, 7, 8, 9],
-    averageTemp: 20,
-    waterTemp: 18,
-    crowdLevel: 6,
-    cost: 55,
-    accommodationOptions: ['Hotel', 'Backpackers', 'Guesthouse'],
-    imageUrl: 'https://images.unsplash.com/photo-1505142468610-359e7d316be0?w=500&h=300&fit=crop',
-    description: 'World-famous right-hand point break.',
-    highlights: ['Perfect right-handers', 'Billabong Pro venue', 'Affordable'],
-    weatherConditions: 'Mediterranean climate',
-    surflineSpotId: '584204214e65fad6a770d195'
-  },
-  {
-    id: 'za-wc-muizenberg',
-    name: 'Muizenberg',
-    country: 'South Africa',
-    region: 'Western Cape',
-    coordinates: { lat: -34.1043, lng: 18.4669 },
-    waveQuality: 5,
-    waveSize: 'small',
-    difficultyLevel: 1,
-    bestMonths: [3, 4, 5, 6, 7, 8, 9],
-    averageTemp: 18,
-    waterTemp: 16,
-    crowdLevel: 8,
-    cost: 45,
-    accommodationOptions: ['Hotel', 'Backpackers', 'Airbnb'],
-    imageUrl: 'https://images.unsplash.com/photo-1544551763-46a013bb70d5?w=500&h=300&fit=crop',
-    description: 'Perfect beginner beach break with colorful huts.',
-    highlights: ['Beginner friendly', 'Colorful beach huts', 'Surf schools'],
-    weatherConditions: 'Mediterranean, can be windy',
-    surflineSpotId: '584204214e65fad6a770d196'
-  },
-
-  // PHILIPPINES
-  {
+{
     id: 'ph-pa-cloud9',
     name: 'Cloud 9',
     country: 'Philippines',
@@ -2047,98 +1807,7 @@ export const surfDestinations: SurfDestination[] = [
     surflineSpotId: '584204214e65fad6a770d197'
   },
 
-  // NEW ZEALAND
-  {
-    id: 'nz-auk-raglan',
-    name: 'Raglan',
-    country: 'New Zealand',
-    region: 'Waikato',
-    coordinates: { lat: -37.7974, lng: 174.8631 },
-    waveQuality: 8,
-    waveSize: 'medium',
-    difficultyLevel: 2,
-    bestMonths: [3, 4, 5, 6, 7, 8, 9],
-    averageTemp: 16,
-    waterTemp: 15,
-    crowdLevel: 5,
-    cost: 80,
-    accommodationOptions: ['Hotel', 'Backpackers', 'Holiday Park'],
-    imageUrl: 'https://images.unsplash.com/photo-1505142468610-359e7d316be0?w=500&h=300&fit=crop',
-    description: 'Famous left-hand point break with long rides.',
-    highlights: ['Long left-handers', 'Beautiful scenery', 'Relaxed vibe'],
-    weatherConditions: 'Temperate oceanic climate',
-    surflineSpotId: '584204214e65fad6a770d198'
-  },
-
-  // CHILE
-  {
-    id: 'cl-val-pichilemu',
-    name: 'Pichilemu',
-    country: 'Chile',
-    region: 'Valparaíso',
-    coordinates: { lat: -34.3870, lng: -72.0033 },
-    waveQuality: 7,
-    waveSize: 'large',
-    difficultyLevel: 3,
-    bestMonths: [3, 4, 5, 6, 7, 8, 9],
-    averageTemp: 16,
-    waterTemp: 14,
-    crowdLevel: 4,
-    cost: 40,
-    accommodationOptions: ['Hotel', 'Hostel', 'Cabañas'],
-    imageUrl: 'https://images.unsplash.com/photo-1544551763-46a013bb70d5?w=500&h=300&fit=crop',
-    description: 'Powerful left-hand point break with big waves.',
-    highlights: ['Big wave surfing', 'Consistent swells', 'Affordable'],
-    weatherConditions: 'Mediterranean, cold water',
-    surflineSpotId: '584204214e65fad6a770d199'
-  },
-
-  // PERU
-  {
-    id: 'pe-lim-mancora',
-    name: 'Máncora',
-    country: 'Peru',
-    region: 'Piura',
-    coordinates: { lat: -4.1064, lng: -81.0408 },
-    waveQuality: 8,
-    waveSize: 'medium',
-    difficultyLevel: 2,
-    bestMonths: [3, 4, 5, 6, 7, 8, 9],
-    averageTemp: 26,
-    waterTemp: 22,
-    crowdLevel: 6,
-    cost: 35,
-    accommodationOptions: ['Hotel', 'Hostel', 'Bungalow'],
-    imageUrl: 'https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=500&h=300&fit=crop',
-    description: 'Consistent left-hand point break in northern Peru.',
-    highlights: ['Consistent waves', 'Warm water', 'Affordable'],
-    weatherConditions: 'Tropical desert climate',
-    surflineSpotId: '584204214e65fad6a770d200'
-  },
-  {
-    id: 'pe-lim-chicama',
-    name: 'Chicama',
-    country: 'Peru',
-    region: 'La Libertad',
-    coordinates: { lat: -7.7028, lng: -79.4678 },
-    waveQuality: 9,
-    waveSize: 'medium',
-    difficultyLevel: 2,
-    bestMonths: [3, 4, 5, 6, 7, 8, 9],
-    averageTemp: 22,
-    waterTemp: 18,
-    crowdLevel: 3,
-    cost: 40,
-    accommodationOptions: ['Lodge', 'Hostel'],
-    imageUrl: 'https://images.unsplash.com/photo-1544551763-46a013bb70d5?w=500&h=300&fit=crop',
-    description: 'Longest left-hand wave in the world.',
-    highlights: ['Longest wave', 'Epic rides', 'Uncrowded'],
-    weatherConditions: 'Coastal desert climate',
-    surflineSpotId: '584204214e65fad6a770d201'
-  },
-
-  // ECUADOR
-  {
+{
     id: 'ec-man-montanita',
     name: 'Montañita',
     country: 'Ecuador',
@@ -2160,144 +1829,7 @@ export const surfDestinations: SurfDestination[] = [
     surflineSpotId: '584204214e65fad6a770d202'
   },
 
-  // PORTUGAL
-  {
-    id: 'pt-lis-ericeira',
-    name: 'Ericeira',
-    country: 'Portugal',
-    region: 'Lisbon',
-    coordinates: { lat: 38.9633, lng: -9.4156 },
-    waveQuality: 8,
-    waveSize: 'large',
-    difficultyLevel: 3,
-    bestMonths: [9, 10, 11, 12, 1, 2, 3, 4],
-    averageTemp: 18,
-    waterTemp: 16,
-    crowdLevel: 7,
-    cost: 65,
-    accommodationOptions: ['Hotel', 'Guesthouse', 'Airbnb'],
-    imageUrl: 'https://images.unsplash.com/photo-1544551763-46a013bb70d5?w=500&h=300&fit=crop',
-    description: 'World Surfing Reserve with multiple breaks.',
-    highlights: ['World-class waves', 'Multiple breaks', 'Charming town'],
-    weatherConditions: 'Mediterranean climate',
-    surflineSpotId: '584204214e65fad6a770d203'
-  },
-  {
-    id: 'pt-lga-nazare',
-    name: 'Nazaré',
-    country: 'Portugal',
-    region: 'Leiria',
-    coordinates: { lat: 39.6019, lng: -9.0752 },
-    waveQuality: 10,
-    waveSize: 'large',
-    difficultyLevel: 4,
-    bestMonths: [10, 11, 12, 1, 2, 3],
-    averageTemp: 16,
-    waterTemp: 15,
-    crowdLevel: 4,
-    cost: 70,
-    accommodationOptions: ['Hotel', 'Guesthouse'],
-    imageUrl: 'https://images.unsplash.com/photo-1502680390469-be75c86b636f?w=500&h=300&fit=crop',
-    description: 'Home to the biggest waves in the world.',
-    highlights: ['Biggest waves', 'World records', 'Spectacular'],
-    weatherConditions: 'Atlantic climate, stormy winters',
-    surflineSpotId: '584204214e65fad6a770d204'
-  },
-
-  // SPAIN
-  {
-    id: 'es-ast-mundaka',
-    name: 'Mundaka',
-    country: 'Spain',
-    region: 'Basque Country',
-    coordinates: { lat: 43.4089, lng: -2.6992 },
-    waveQuality: 9,
-    waveSize: 'large',
-    difficultyLevel: 4,
-    bestMonths: [9, 10, 11, 12, 1, 2, 3],
-    averageTemp: 16,
-    waterTemp: 14,
-    crowdLevel: 8,
-    cost: 80,
-    accommodationOptions: ['Hotel', 'Pension', 'Airbnb'],
-    imageUrl: 'https://images.unsplash.com/photo-1505142468610-359e7d316be0?w=500&h=300&fit=crop',
-    description: 'Perfect left-hand rivermouth break.',
-    highlights: ['Perfect left-handers', 'World championship venue', 'Basque culture'],
-    weatherConditions: 'Oceanic climate, wet winters',
-    surflineSpotId: '584204214e65fad6a770d205'
-  },
-
-  // FRANCE
-  {
-    id: 'fr-aqu-hossegor',
-    name: 'Hossegor',
-    country: 'France',
-    region: 'Nouvelle-Aquitaine',
-    coordinates: { lat: 43.6617, lng: -1.3989 },
-    waveQuality: 9,
-    waveSize: 'large',
-    difficultyLevel: 3,
-    bestMonths: [8, 9, 10, 11, 12, 1, 2],
-    averageTemp: 18,
-    waterTemp: 16,
-    crowdLevel: 9,
-    cost: 90,
-    accommodationOptions: ['Hotel', 'Camping', 'Airbnb'],
-    imageUrl: 'https://images.unsplash.com/photo-1544551763-46a013bb70d5?w=500&h=300&fit=crop',
-    description: 'World-class beach breaks and barrels.',
-    highlights: ['Perfect barrels', 'Championship venue', 'Fashion capital'],
-    weatherConditions: 'Oceanic climate',
-    surflineSpotId: '584204214e65fad6a770d206'
-  },
-
-  // MOROCCO
-  {
-    id: 'ma-sou-taghazout',
-    name: 'Taghazout',
-    country: 'Morocco',
-    region: 'Souss-Massa',
-    coordinates: { lat: 30.5420, lng: -9.7086 },
-    waveQuality: 8,
-    waveSize: 'large',
-    difficultyLevel: 3,
-    bestMonths: [10, 11, 12, 1, 2, 3, 4],
-    averageTemp: 22,
-    waterTemp: 18,
-    crowdLevel: 7,
-    cost: 35,
-    accommodationOptions: ['Riad', 'Guesthouse', 'Surf Camp'],
-    imageUrl: 'https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=500&h=300&fit=crop',
-    description: 'Consistent right-hand point breaks.',
-    highlights: ['Consistent waves', 'Affordable', 'Berber culture'],
-    weatherConditions: 'Mediterranean, mild winters',
-    surflineSpotId: '584204214e65fad6a770d207'
-  },
-
-  // IRELAND
-  {
-    id: 'ie-don-bundoran',
-    name: 'Bundoran',
-    country: 'Ireland',
-    region: 'Donegal',
-    coordinates: { lat: 54.4778, lng: -8.2806 },
-    waveQuality: 7,
-    waveSize: 'large',
-    difficultyLevel: 3,
-    bestMonths: [9, 10, 11, 12, 1, 2, 3],
-    averageTemp: 12,
-    waterTemp: 10,
-    crowdLevel: 5,
-    cost: 75,
-    accommodationOptions: ['Hotel', 'B&B', 'Hostel'],
-    imageUrl: 'https://images.unsplash.com/photo-1505142468610-359e7d316be0?w=500&h=300&fit=crop',
-    description: 'Powerful reef break in cold Atlantic waters.',
-    highlights: ['Powerful waves', 'Dramatic coastline', 'Celtic culture'],
-    weatherConditions: 'Temperate oceanic, wet and windy',
-    surflineSpotId: '584204214e65fad6a770d208'
-  },
-
-  // UNITED KINGDOM
-  {
+{
     id: 'gb-cor-fistral',
     name: 'Fistral Beach',
     country: 'United Kingdom',
