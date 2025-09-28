@@ -75,76 +75,76 @@ export const DestinationGrid: React.FC<DestinationGridProps> = ({
   };
 
   return (
-    <div className="destination-grid">
-      {/* Header with controls */}
-      <div className="grid-header mb-6">
-        <div className="flex items-center justify-between mb-4">
-          <div>
-            <h2 className="text-2xl font-bold text-gray-900 mb-2">Your Perfect Surf Destinations</h2>
-            <p className="text-gray-600">
-              {rankedDestinations.length} destinations ranked by your preferences
-            </p>
+    <>
+      {/* Fixed positioned preference controls - rendered outside normal flow */}
+      <PreferenceWeightControls
+        weights={preferences.preferenceWeights || {
+          waveQuality: 25,
+          budget: 20,
+          travelTime: 15,
+          crowdLevel: 10,
+          temperature: 10,
+          skillMatch: 15,
+          safetyFactors: 5
+        }}
+        onWeightsChange={handlePreferenceWeightChange}
+      />
+
+      <div className="destination-grid">
+        {/* Header with controls */}
+        <div className="grid-header mb-6">
+          <div className="flex items-center justify-between mb-4">
+            <div>
+              <h2 className="text-2xl font-bold text-white mb-2">Your Perfect Surf Destinations</h2>
+              <p className="text-purple-100">
+                {rankedDestinations.length} destinations ranked by your preferences
+              </p>
+            </div>
+
+            {/* View mode toggle */}
+            <div className="flex items-center gap-2">
+              <button
+                onClick={() => setViewMode('grid')}
+                className={`flex items-center gap-2 px-3 py-2 rounded-md transition-colors ${
+                  viewMode === 'grid'
+                    ? 'bg-blue-600 text-white'
+                    : 'bg-gray-100 text-gray-600 hover:bg-gray-200'
+                }`}
+              >
+                <Grid className="w-4 h-4" />
+                Grid
+              </button>
+              <button
+                onClick={() => setViewMode('detailed')}
+                className={`flex items-center gap-2 px-3 py-2 rounded-md transition-colors ${
+                  viewMode === 'detailed'
+                    ? 'bg-blue-600 text-white'
+                    : 'bg-gray-100 text-gray-600 hover:bg-gray-200'
+                }`}
+              >
+                <Layout className="w-4 h-4" />
+                Detailed
+              </button>
+            </div>
           </div>
 
-          {/* View mode toggle */}
-          <div className="flex items-center gap-2">
-            <button
-              onClick={() => setViewMode('grid')}
-              className={`flex items-center gap-2 px-3 py-2 rounded-md transition-colors ${
-                viewMode === 'grid'
-                  ? 'bg-blue-600 text-white'
-                  : 'bg-gray-100 text-gray-600 hover:bg-gray-200'
-              }`}
-            >
-              <Grid className="w-4 h-4" />
-              Grid
-            </button>
-            <button
-              onClick={() => setViewMode('detailed')}
-              className={`flex items-center gap-2 px-3 py-2 rounded-md transition-colors ${
-                viewMode === 'detailed'
-                  ? 'bg-blue-600 text-white'
-                  : 'bg-gray-100 text-gray-600 hover:bg-gray-200'
-              }`}
-            >
-              <Layout className="w-4 h-4" />
-              Detailed
-            </button>
+          {/* Results summary */}
+          <div className="flex items-center gap-4 text-sm text-gray-600 bg-blue-50 p-3 rounded-lg">
+            <div className="flex items-center gap-1">
+              <TrendingUp className="w-4 h-4 text-blue-600" />
+              <span>
+                Top match: <strong>{rankedDestinations[0]?.name}</strong>
+                {rankedDestinations[0]?.recommendationScore &&
+                  ` (${rankedDestinations[0].recommendationScore.overallScore}% match)`
+                }
+              </span>
+            </div>
+            <div className="flex items-center gap-1">
+              <Filter className="w-4 h-4 text-blue-600" />
+              <span>Filtered from {destinations.length} total destinations</span>
+            </div>
           </div>
         </div>
-
-        {/* Preference weight controls */}
-        <PreferenceWeightControls
-          weights={preferences.preferenceWeights || {
-            waveQuality: 25,
-            budget: 20,
-            travelTime: 15,
-            crowdLevel: 10,
-            temperature: 10,
-            skillMatch: 15,
-            safetyFactors: 5
-          }}
-          onWeightsChange={handlePreferenceWeightChange}
-          className="mb-4"
-        />
-
-        {/* Results summary */}
-        <div className="flex items-center gap-4 text-sm text-gray-600 bg-blue-50 p-3 rounded-lg">
-          <div className="flex items-center gap-1">
-            <TrendingUp className="w-4 h-4 text-blue-600" />
-            <span>
-              Top match: <strong>{rankedDestinations[0]?.name}</strong>
-              {rankedDestinations[0]?.recommendationScore &&
-                ` (${rankedDestinations[0].recommendationScore.overallScore}% match)`
-              }
-            </span>
-          </div>
-          <div className="flex items-center gap-1">
-            <Filter className="w-4 h-4 text-blue-600" />
-            <span>Filtered from {destinations.length} total destinations</span>
-          </div>
-        </div>
-      </div>
 
       {/* Grid view */}
       {viewMode === 'grid' && (
@@ -188,6 +188,7 @@ export const DestinationGrid: React.FC<DestinationGridProps> = ({
           onClose={handleCloseModal}
         />
       )}
-    </div>
+      </div>
+    </>
   );
 };
