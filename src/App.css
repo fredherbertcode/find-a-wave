@@ -3677,6 +3677,96 @@ html {
   }
 }
 
+/* Preference Sidebar Styles */
+.preference-slider-sidebar {
+  -webkit-appearance: none;
+  appearance: none;
+  height: 12px;
+  border-radius: 6px;
+  outline: none;
+  transition: all 0.3s ease;
+  cursor: pointer;
+  border: none;
+}
+
+.preference-slider-sidebar::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 28px;
+  height: 28px;
+  border-radius: 50%;
+  background: white;
+  cursor: pointer;
+  border: 3px solid rgba(255, 255, 255, 0.8);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+  transition: all 0.2s ease;
+}
+
+.preference-slider-sidebar::-webkit-slider-thumb:hover {
+  transform: scale(1.1);
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.4);
+  border-color: white;
+}
+
+.preference-slider-sidebar::-webkit-slider-thumb:active {
+  transform: scale(1.05);
+}
+
+.preference-slider-sidebar::-moz-range-thumb {
+  width: 28px;
+  height: 28px;
+  border-radius: 50%;
+  background: white;
+  cursor: pointer;
+  border: 3px solid rgba(255, 255, 255, 0.8);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+  transition: all 0.2s ease;
+}
+
+.preference-slider-sidebar::-moz-range-thumb:hover {
+  transform: scale(1.1);
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.4);
+  border-color: white;
+}
+
+/* Sidebar backdrop blur */
+.sidebar-backdrop {
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+}
+
+/* Sidebar glassmorphism effect */
+.sidebar-glass {
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  background: rgba(255, 255, 255, 0.1);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+/* Sidebar mobile responsive */
+@media (max-width: 768px) {
+  .preference-sidebar-mobile {
+    width: 100vw !important;
+    max-width: 100vw !important;
+  }
+
+  .preference-slider-sidebar {
+    height: 16px;
+  }
+
+  .preference-slider-sidebar::-webkit-slider-thumb {
+    width: 32px;
+    height: 32px;
+    border: 4px solid rgba(255, 255, 255, 0.8);
+  }
+
+  .preference-slider-sidebar::-moz-range-thumb {
+    width: 32px;
+    height: 32px;
+    border: 4px solid rgba(255, 255, 255, 0.8);
+  }
+}
+
 /* Dark mode support (if needed in future) */
 @media (prefers-color-scheme: dark) {
   /* Can add dark mode styles here */
