@@ -11,6 +11,16 @@
   --text-gray: #374151;
 }
 
+/* Mobile-first responsive design */
+* {
+  box-sizing: border-box;
+}
+
+html {
+  -webkit-text-size-adjust: 100%;
+  -webkit-tap-highlight-color: transparent;
+}
+
 /* App Layout */
 .app {
   min-height: 100vh;
@@ -3238,4 +3248,323 @@
   .tech-explanation h5 {
     font-size: 1rem;
   }
+}
+
+/* Enhanced Component Styles */
+
+/* Recommendation Explanation Styles */
+.recommendation-explanation {
+  background: #f8fafc;
+  border-radius: 12px;
+  padding: 1rem;
+  margin: 1rem 0;
+}
+
+.simple-explanation {
+  width: 100%;
+}
+
+.detailed-explanation {
+  background: #f9fafb;
+  border-radius: 8px;
+  padding: 1rem;
+  margin-top: 1rem;
+}
+
+.factor-item {
+  margin-bottom: 1rem;
+}
+
+.factor-item:last-child {
+  margin-bottom: 0;
+}
+
+/* Preference Weight Controls */
+.preference-weight-controls {
+  margin: 1rem 0;
+}
+
+.factor-control {
+  margin-bottom: 1rem;
+}
+
+.slider {
+  -webkit-appearance: none;
+  appearance: none;
+  height: 6px;
+  border-radius: 3px;
+  background: #e5e7eb;
+  outline: none;
+}
+
+.slider::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background: #667eea;
+  cursor: pointer;
+  border: 2px solid white;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.slider::-moz-range-thumb {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background: #667eea;
+  cursor: pointer;
+  border: 2px solid white;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+/* Enhanced Destination Card Styles */
+.enhanced-destination-card {
+  transition: all 0.3s ease;
+  border: 1px solid #e5e7eb;
+}
+
+.enhanced-destination-card:hover {
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+  transform: translateY(-2px);
+}
+
+.detailed-card {
+  margin-bottom: 2rem;
+}
+
+/* Booking Options Styles */
+.booking-options {
+  background: #f8fafc;
+  border-radius: 12px;
+  padding: 1rem;
+  margin: 1rem 0;
+}
+
+.booking-type-group {
+  margin-bottom: 1.5rem;
+}
+
+.booking-type-group:last-child {
+  margin-bottom: 0;
+}
+
+.booking-option-card {
+  transition: all 0.2s ease;
+  cursor: pointer;
+}
+
+.booking-option-card:hover {
+  background: #f0f9ff !important;
+  border-color: #3b82f6 !important;
+  transform: translateY(-1px);
+}
+
+/* Feedback Modal Styles */
+.feedback-modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.5);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
+  padding: 1rem;
+}
+
+.feedback-modal-content {
+  background: white;
+  border-radius: 12px;
+  max-width: 500px;
+  width: 100%;
+  max-height: 90vh;
+  overflow-y: auto;
+}
+
+.star-rating {
+  margin: 1rem 0;
+}
+
+.star-rating button {
+  background: none;
+  border: none;
+  cursor: pointer;
+  transition: color 0.2s ease;
+}
+
+.expected-rating {
+  margin: 1rem 0;
+}
+
+.expected-rating input[type="range"] {
+  width: 100%;
+  margin: 0.5rem 0;
+}
+
+/* Mobile Responsive Enhancements */
+@media (max-width: 768px) {
+  /* Enhanced destination cards on mobile */
+  .enhanced-destination-card {
+    margin-bottom: 1rem;
+  }
+
+  .detailed-explanation {
+    padding: 0.75rem;
+  }
+
+  .factor-breakdown {
+    gap: 0.75rem;
+  }
+
+  /* Preference weight controls mobile */
+  .preference-weight-controls .grid {
+    grid-template-columns: 1fr;
+  }
+
+  .factor-control {
+    margin-bottom: 0.75rem;
+  }
+
+  /* Booking options mobile */
+  .booking-option-card {
+    padding: 0.75rem !important;
+    flex-direction: column;
+    align-items: flex-start;
+    text-align: left;
+  }
+
+  .booking-option-card > div:last-child {
+    margin-top: 0.5rem;
+    align-self: stretch;
+    text-align: center;
+  }
+
+  /* Grid view toggle mobile */
+  .grid-header .flex {
+    flex-direction: column;
+    gap: 1rem;
+    align-items: stretch;
+  }
+
+  .grid-header .flex > div:first-child {
+    text-align: center;
+  }
+
+  .grid-header .flex > div:last-child {
+    justify-content: center;
+  }
+
+  /* Results summary mobile */
+  .grid-header .flex.items-center.gap-4 {
+    flex-direction: column;
+    gap: 0.5rem;
+    text-align: center;
+  }
+
+  /* Feedback modal mobile */
+  .feedback-modal {
+    padding: 0.5rem;
+  }
+
+  .feedback-modal-content {
+    margin: 0;
+    border-radius: 8px;
+  }
+
+  .star-rating {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .star-rating button {
+    width: 32px;
+    height: 32px;
+  }
+}
+
+@media (max-width: 480px) {
+  /* Very small mobile screens */
+  .recommendation-explanation {
+    padding: 0.75rem;
+  }
+
+  .simple-reasons ul {
+    padding-left: 1rem;
+  }
+
+  .detailed-explanation {
+    padding: 0.5rem;
+  }
+
+  .factor-item {
+    margin-bottom: 0.75rem;
+  }
+
+  .preference-weight-controls {
+    margin: 0.5rem 0;
+  }
+
+  .booking-options {
+    padding: 0.75rem;
+  }
+
+  .booking-type-group {
+    margin-bottom: 1rem;
+  }
+
+  .enhanced-destination-card .grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 0.5rem;
+  }
+
+  .enhanced-destination-card .text-center {
+    text-align: left;
+  }
+
+  .enhanced-destination-card .text-center .flex {
+    justify-content: flex-start;
+  }
+
+  /* Star rating mobile */
+  .star-rating button {
+    width: 28px;
+    height: 28px;
+  }
+
+  .star-rating .flex {
+    gap: 0.25rem;
+  }
+}
+
+/* Touch-friendly improvements */
+@media (hover: none) {
+  .booking-option-card:hover {
+    background: initial !important;
+    border-color: initial !important;
+    transform: none !important;
+  }
+
+  .booking-option-card:active {
+    background: #f0f9ff !important;
+    border-color: #3b82f6 !important;
+    transform: scale(0.98);
+  }
+
+  .enhanced-destination-card:hover {
+    box-shadow: initial;
+    transform: none;
+  }
+
+  .enhanced-destination-card:active {
+    transform: scale(0.98);
+  }
+}
+
+/* Dark mode support (if needed in future) */
+@media (prefers-color-scheme: dark) {
+  /* Can add dark mode styles here */
 }

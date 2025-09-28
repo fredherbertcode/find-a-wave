@@ -13,6 +13,17 @@ export interface SurfPreferences {
   travelMonth: number; // 1-12 (derived from travelDates for backward compatibility)
   tripDuration: number; // in days (derived from travelDates)
   needsSurfLessons: boolean;
+  preferenceWeights?: PreferenceWeights; // User-customizable importance weights
+}
+
+export interface PreferenceWeights {
+  waveQuality: number;      // 0-100%
+  budget: number;
+  travelTime: number;
+  crowdLevel: number;
+  temperature: number;
+  skillMatch: number;
+  safetyFactors: number;
 }
 
 export interface SurfForecast {
@@ -67,8 +78,113 @@ export interface SurfDestination {
   forecast?: SurfForecast;
   travelTime?: TravelTimeResult; // Best travel option
   numbeoUrl?: string; // Link to Numbeo cost data
-  touristFriendliness: number; // 1-10 scale
-  lifeguardPresence: boolean; // Whether lifeguards are present
-  breakType: string; // 'reef' | 'beach' | 'point' | 'reef+beach' etc.
+  touristFriendliness?: number; // 1-10 scale
+  lifeguardPresence?: boolean; // Whether lifeguards are present
+  breakType?: string; // 'reef' | 'beach' | 'point' | 'reef+beach' etc.
   redditQuotes?: RedditQuote[]; // Community quotes about the destination
+  safetyInfo?: SafetyInfo;
+  skillRequirements?: SkillRequirement[];
+  bookingOptions?: BookingOption[];
+  recommendationScore?: RecommendationExplanation;
+}
+
+// Enhanced Safety Information
+export interface SafetyInfo {
+  overallSafetyRating: number; // 1-10
+  medicalFacilitiesNearby: boolean;
+  lifeguardPresence: boolean;
+  emergencyContacts: string[];
+  commonHazards: string[];
+  beginnerFriendlyTimes: string[];
+  waterQualityRating: number; // 1-10
+}
+
+// Skill Requirements
+export interface SkillRequirement {
+  skill: string;
+  level: 'required' | 'recommended' | 'helpful';
+  description: string;
+}
+
+// Booking Integration
+export interface BookingOption {
+  type: 'accommodation' | 'flights' | 'surf-lessons' | 'equipment-rental';
+  provider: string;
+  url: string;
+  estimatedPrice?: number;
+  currency?: string;
+}
+
+// Recommendation Explanations
+export interface RecommendationExplanation {
+  overallScore: number;
+  confidenceLevel: number; // 0-100%
+  factorBreakdown: {
+    skillMatch: FactorScore;
+    budgetFit: FactorScore;
+    seasonalTiming: FactorScore;
+    travelLogistics: FactorScore;
+    safetyFactors: FactorScore;
+    personalPreferences: FactorScore;
+  };
+  alternativeReasons: string[];
+  whyNotHigher?: string;
+}
+
+export interface FactorScore {
+  score: number; // 0-100
+  weight: number; // 0-100
+  explanation: string;
+  confidence: number; // 0-100
+}
+
+// User Feedback and Learning
+export interface UserInteraction {
+  userId?: string;
+  sessionId: string;
+  destinationId: string;
+  action: 'viewed' | 'saved' | 'shared' | 'clicked-booking' | 'applied-filters';
+  timestamp: Date;
+  durationViewed?: number;
+  searchContext: SurfPreferences;
+  deviceType: 'mobile' | 'tablet' | 'desktop';
+}
+
+export interface UserFeedback {
+  userId?: string;
+  sessionId: string;
+  destinationId: string;
+  tripCompleted: boolean;
+  ratings: {
+    overallExperience: number; // 1-10
+    waveQualityVsExpected: number; // 1-10
+    crowdLevelVsExpected: number; // 1-10
+    costVsExpected: number; // 1-10
+    safetyRating: number; // 1-10
+  };
+  wouldReturn: boolean;
+  wouldRecommend: boolean;
+  comments?: string;
+  submittedAt: Date;
+}
+
+// Trip Planning
+export interface TripPlan {
+  id: string;
+  userId?: string;
+  sessionId: string;
+  destinations: string[];
+  preferences: SurfPreferences;
+  estimatedCost: number;
+  status: 'planning' | 'booked' | 'completed';
+  createdAt: Date;
+}
+
+// Analytics and A/B Testing
+export interface ExperimentVariant {
+  experimentId: string;
+  variantId: string;
+  userId?: string;
+  sessionId: string;
+  assignedAt: Date;
 }

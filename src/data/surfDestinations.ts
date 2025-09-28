@@ -37,8 +37,57 @@ export const surfDestinations: SurfDestination[] = [
         url: "https://www.reddit.com/r/surfing/search/?q=malibu+first+point&restrict_sr=1",
         subreddit: "r/surfing"
       }
+    ],
+    safetyInfo: {
+      overallSafetyRating: 9,
+      medicalFacilitiesNearby: true,
+      lifeguardPresence: true,
+      emergencyContacts: ['911', 'Malibu Marine Safety: (310) 456-2489'],
+      commonHazards: ['Crowds', 'Parking difficulties', 'Occasional riptides'],
+      beginnerFriendlyTimes: ['Early morning (6-9 AM)', 'Weekdays', 'Smaller swell days'],
+      waterQualityRating: 7
+    },
+    skillRequirements: [
+      {
+        skill: 'Basic paddling technique',
+        level: 'required',
+        description: 'Must be comfortable paddling for 10+ minutes'
+      },
+      {
+        skill: 'Wave recognition',
+        level: 'recommended',
+        description: 'Ability to identify appropriate waves for your skill level'
+      },
+      {
+        skill: 'Ocean safety awareness',
+        level: 'required',
+        description: 'Understanding of riptides and crowd etiquette'
+      }
+    ],
+    bookingOptions: [
+      {
+        type: 'accommodation',
+        provider: 'Booking.com',
+        url: 'https://www.booking.com/searchresults.html?ss=Malibu%2C+California',
+        estimatedPrice: 150,
+        currency: 'USD'
+      },
+      {
+        type: 'surf-lessons',
+        provider: 'Malibu Surf Shack',
+        url: 'https://malibusurfshack.com',
+        estimatedPrice: 75,
+        currency: 'USD'
+      },
+      {
+        type: 'equipment-rental',
+        provider: 'Zuma Jay Surfboards',
+        url: 'https://zumajay.com',
+        estimatedPrice: 40,
+        currency: 'USD'
+      }
     ]
-  },,
+  },
 
   {
     id: 'us-ca-huntington',
@@ -76,8 +125,57 @@ export const surfDestinations: SurfDestination[] = [
         url: "https://www.reddit.com/r/surfing/search/?q=surf+city+usa&restrict_sr=1",
         subreddit: "r/surfing"
       }
+    ],
+    safetyInfo: {
+      overallSafetyRating: 9,
+      medicalFacilitiesNearby: true,
+      lifeguardPresence: true,
+      emergencyContacts: ['911', 'HB Marine Safety: (714) 536-5281'],
+      commonHazards: ['Strong currents near pier', 'Crowds', 'Board traffic'],
+      beginnerFriendlyTimes: ['Early morning', 'South of pier for beginners'],
+      waterQualityRating: 8
+    },
+    skillRequirements: [
+      {
+        skill: 'Intermediate paddling',
+        level: 'required',
+        description: 'Strong paddling skills for busier lineup'
+      },
+      {
+        skill: 'Wave priority understanding',
+        level: 'required',
+        description: 'Must understand surf etiquette in crowded lineups'
+      },
+      {
+        skill: 'Pop-up technique',
+        level: 'required',
+        description: 'Should be able to consistently stand up'
+      }
+    ],
+    bookingOptions: [
+      {
+        type: 'accommodation',
+        provider: 'Booking.com',
+        url: 'https://www.booking.com/searchresults.html?ss=Huntington+Beach%2C+California',
+        estimatedPrice: 120,
+        currency: 'USD'
+      },
+      {
+        type: 'surf-lessons',
+        provider: 'Corky Carroll Surf School',
+        url: 'https://corkycarroll.com',
+        estimatedPrice: 65,
+        currency: 'USD'
+      },
+      {
+        type: 'equipment-rental',
+        provider: 'Huntington Surf & Sport',
+        url: 'https://hsssurf.com',
+        estimatedPrice: 35,
+        currency: 'USD'
+      }
     ]
-  },,
+  },
 
   {
     id: 'us-ca-steamer-lane',

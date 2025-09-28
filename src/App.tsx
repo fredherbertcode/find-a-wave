@@ -28,6 +28,10 @@ function App() {
     }
   };
 
+  const handlePreferencesChange = (updatedPreferences: SurfPreferences) => {
+    setCurrentPreferences(updatedPreferences);
+  };
+
   const handleBackToForm = () => {
     setCurrentView('form');
     setFilteredDestinations([]);
@@ -78,6 +82,8 @@ function App() {
               destinations={filteredDestinations}
               travelMonth={currentPreferences.travelMonth}
               tripDuration={currentPreferences.tripDuration}
+              preferences={currentPreferences}
+              onPreferencesChange={handlePreferencesChange}
             />
           </div>
         )}
